@@ -1,0 +1,4 @@
+apiVersion: v2
+name: gh-arc-app-of-apps
+description: Argo CD App of apps for deploying multiple GitHub actions runner scale set instances
+version: 0.1.0
