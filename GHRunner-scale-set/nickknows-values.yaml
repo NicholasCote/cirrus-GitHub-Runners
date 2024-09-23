@@ -5,3 +5,6 @@ githubConfigSecret:
       secretKeyRef:
         name: ncote-github-token
         key: token
+controllerServiceAccount:
+  namespace: gh-arc
+  name: arc-controller-gha-rs-controller
