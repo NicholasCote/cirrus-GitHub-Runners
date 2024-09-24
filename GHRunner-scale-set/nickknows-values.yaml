@@ -7,4 +7,4 @@ githubConfigSecret:
         key: token
 controllerServiceAccount:
   namespace: gh-arc
-  name: arc-controller-gha-rs-controller
+  name: gh-arc-controller-gha-rs-controller
