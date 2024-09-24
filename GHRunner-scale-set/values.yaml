@@ -3,4 +3,4 @@ runners:
     name: nickknows-runner
   skitunes:
     name: skitunes-runner
-namespace: gh-arc
+namespace: gh-arc-runners
