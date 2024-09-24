@@ -1,0 +1,10 @@
+githubConfigUrl: Gin-G/SkiTunes
+githubConfigSecret:
+  github_token:
+    valueFrom:
+      secretKeyRef:
+        name: ncote-github-token
+        key: token
+controllerServiceAccount:
+  namespace: gh-arc
+  name: arc-controller-gha-rs-controller

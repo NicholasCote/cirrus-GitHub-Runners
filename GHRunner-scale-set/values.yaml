@@ -1,4 +1,6 @@
 runners:
   nickknows:
     name: nickknows-runner
+  skitunes:
+    name: skitunes-runner
 namespace: gh-arc-scale-sets
