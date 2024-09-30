@@ -3,4 +3,6 @@ runners:
     name: nickknows-runner
   skitunes:
     name: skitunes-runner
+  samurai:
+    name: samurai-runner
 namespace: gh-arc-runners
