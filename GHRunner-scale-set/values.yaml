@@ -7,6 +7,6 @@ runners:
     name: samurai-runner
   micm:
     name: micm-runner
-  ccpp-jhub:
+  ccppjhub:
     name: ccpp-jhub-runner
 namespace: gh-arc-runners
