@@ -1,7 +1,1 @@
 githubConfigUrl: Gin-G/ccpp-jhub-images-ging
-githubConfigSecret:
-  github_token:
-    valueFrom:
-      secretKeyRef:
-        name: ncote-github-token
-        key: token
