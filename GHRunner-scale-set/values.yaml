@@ -5,4 +5,6 @@ runners:
     name: skitunes-runner
   samurai:
     name: samurai-runner
+  micm:
+    name: micm-runner
 namespace: gh-arc-runners

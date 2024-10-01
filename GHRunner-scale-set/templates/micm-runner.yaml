@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: '{{ .Release.Name }}-{{ .Values.runners.skitunes.name }}'
+  name: '{{ .Release.Name }}-{{ .Values.runners.micm.name }}'
   namespace: argo
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
       targetRevision: main
       helm:
         valueFiles: 
-          - $values/GHRunner-scale-set/skitunes-values.yaml
+          - $values/GHRunner-scale-set/micm-values.yaml
     - repoURL: 'https://github.com/NicholasCote/cirrus-GitHub-Runners'
       targetRevision: main
       ref: values
@@ -25,4 +25,3 @@ spec:
     syncOptions:
     - CreateNamespace=true
     - ServerSideApply=true
-            
