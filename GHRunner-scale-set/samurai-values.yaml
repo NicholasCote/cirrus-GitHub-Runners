@@ -1,10 +1,1 @@
 githubConfigUrl: Gin-G/samurai-ncote
-githubConfigSecret:
-  github_token:
-    valueFrom:
-      secretKeyRef:
-        name: ncote-github-token
-        key: token
-controllerServiceAccount:
-  namespace: gh-arc
-  name: gh-arc-controller-gha-rs-controller
