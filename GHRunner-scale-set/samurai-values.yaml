@@ -1,7 +1,9 @@
 githubConfigUrl: Gin-G/samurai-ncote
 githubConfigSecret:
-  github_token:
-    valueFrom:
-      secretKeyRef:
-        name: ncote-github-token
-        key: token
+  github_token: $GITHUB_TOKEN
+env:
+- name: GITHUB_TOKEN
+  valueFrom:
+    secretKeyRef:
+      name: ncote-github-token
+      key: token
