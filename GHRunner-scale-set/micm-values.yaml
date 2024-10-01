@@ -1,1 +1,7 @@
 githubConfigUrl: Gin-G/micm-ncote
+githubConfigSecret:
+  github_token:
+    valueFrom:
+      secretKeyRef:
+        name: ncote-github-token
+        key: token

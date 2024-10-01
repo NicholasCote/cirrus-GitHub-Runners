@@ -10,9 +10,3 @@ runners:
   ccpp-jhub:
     name: ccpp-jhub-runner
 namespace: gh-arc-runners
-githubConfigSecret:
-  github_token:
-    valueFrom:
-      secretKeyRef:
-        name: ncote-github-token
-        key: token
