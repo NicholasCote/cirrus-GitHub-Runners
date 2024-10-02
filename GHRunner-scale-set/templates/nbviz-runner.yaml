@@ -11,7 +11,7 @@ spec:
   sources:
   - helm:
       valueFiles:
-      - $values/gha-runner-scale-set/nbviz-values.yaml
+      - $values/GHRunner-scale-set/nbviz-values.yaml
     path: gha-runner-scale-set
     repoURL: https://github.com/Gin-G/argo-k8s-stuff
     targetRevision: main

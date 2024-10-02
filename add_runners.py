@@ -18,7 +18,7 @@ def generate_application(name):
                     "targetRevision": "main",
                     "helm": {
                         "valueFiles": [
-                            f"$values/gha-runner-scale-set/{name}-values.yaml"
+                            f"$values/GHRunner-scale-set/{name}-values.yaml"
                         ]
                     }
                 },
