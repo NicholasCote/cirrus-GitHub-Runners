@@ -30,7 +30,7 @@ def generate_application(name):
             ],
             "destination": {
                 "server": "https://kubernetes.default.svc",
-                "namespace": "'{{ .Values.namespace }}'"
+                "namespace": "{{ .Values.namespace }}"
             },
             "syncPolicy": {
                 "automated": {
