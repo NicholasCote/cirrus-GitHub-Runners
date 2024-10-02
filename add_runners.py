@@ -6,7 +6,7 @@ def generate_application(name):
         "apiVersion": "argoproj.io/v1alpha1",
         "kind": "Application",
         "metadata": {
-            "name": f'{{{{ .Release.Name }}}}-{{{{ .Values.jhubs.{name}.name }}}}',
+            "name": f'{{{{ .Release.Name }}}}-{{{{ .Values.runners.{name}.name }}}}',
             "namespace": "argo"
         },
         "spec": {
