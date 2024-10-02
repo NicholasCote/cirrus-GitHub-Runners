@@ -31,16 +31,6 @@ def generate_application(name):
             "destination": {
                 "server": "https://kubernetes.default.svc",
                 "namespace": "{{ .Values.namespace }}"
-            },
-            "syncPolicy": {
-                "automated": {
-                    "prune": True,
-                    "selfHeal": True
-                },
-                "syncOptions": [
-                    "CreateNamespace=true",
-                    "ServerSideApply=true"
-                ]
             }
         }
     }
@@ -77,7 +67,7 @@ def main(name, git_url):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate Argo CD Application manifests")
     parser.add_argument("name", help="Name of the repository. Will become the name to use in the GitHub Actions workflow for runs-on, ie. runs-on: gh-arc-runners-<name>-runner")
-    parser.add_argument("git_url", help="Full path to the Jupyter container image to run")
+    parser.add_argument("git_url", help="The git url for the repository to connect to, for example https://github.com/NicholasCote/cirrus-GitHub-Runners.git")
     args = parser.parse_args()
     
     main(args.name, args.git_url)

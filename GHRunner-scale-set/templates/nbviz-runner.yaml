@@ -18,10 +18,3 @@ spec:
   - ref: values
     repoURL: https://github.com/NicholasCote/cirrus-GitHub-Runners
     targetRevision: main
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-    - CreateNamespace=true
-    - ServerSideApply=true
