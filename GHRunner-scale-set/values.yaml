@@ -1,12 +1,14 @@
+namespace: gh-arc-runners
 runners:
-  nickknows:
-    name: nickknows-runner
-  skitunes:
-    name: skitunes-runner
-  samurai:
-    name: samurai-runner
-  micm:
-    name: micm-runner
   ccppjhub:
     name: ccpp-jhub-runner
-namespace: gh-arc-runners
+  micm:
+    name: micm-runner
+  nbviz:
+    name: nbviz-runner
+  nickknows:
+    name: nickknows-runner
+  samurai:
+    name: samurai-runner
+  skitunes:
+    name: skitunes-runner
